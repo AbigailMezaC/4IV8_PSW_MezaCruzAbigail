@@ -60,9 +60,9 @@
 .loader-double{
     width: 64px;
     height: 64px;
-    border: 16px solid #19c20a63;
+    border: 16px solid #15ff0063;
     border-top: 16px solid #087777;
-    border-bottom: 16px solid #4709f18c;
+    border-bottom: 16px solid #552dc28c;
     border-radius: 50%;
     animation: girar 2s linear infinite;
 }
