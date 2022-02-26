@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes colores{
+    from{
+        background-color: #54BAB9;
+    }
+    to{
+        background-color: #F7ECDE;
+    }
+    to{
+        background-color: #dd9dc8da;
+    }
+}
+
+body{
+    background-size: cover;
+    color: #E9DAC1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.contenedorPrincipal{
+    background-color: #E9DAC1;
+    width: 900px;
+    height: auto;
+    border-radius: 15px solid rgb(0, 0, 0);
+}
+
+.titulo{
+    background-color: #ffffff;
+    color: black;
+    height: 200px;
+    width: 600px;
+    border-radius: 50px solid rgb(0, 0, 0);
+    text-align: left;
+    float: left;
+    text-indent: 60px;
+    animation-name: colores;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.titulo p{
+    color: #2b706f00;
+}
+
+.imagen{
+    background-color: #ffffff;
+    height: 200px;
+    width: 300px;
+    border-radius: 50px solid rgb(0, 0, 0);
+    text-align: center;
+    float: left;
+    animation-name: colores;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.imgRedonda{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    margin-right: 5%px;
+}
+
+.infoP{
+    background-color: #F7ECDE;
+    color: black;
+    height: 300px;
+    width: 280px;
+    border-radius: 50px solid rgb(0, 0, 0);
+    text-align: left;
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+    text-indent: 10px;
+    line-height: 15px;
+    border-radius: 20px;
+}
+
+.infoP h2{
+    color: #54BAB9;
+    line-height: 20px;
+}
+
+.wia{
+    background-color: #FBF8F1;
+    color: black;
+    height: 300px;
+    width: 280px;
+    border-radius: 50px solid rgb(0, 0, 0);
+    text-align: left;
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+    text-indent: 10px;
+    line-height: 20px;
+    border-radius: 20px;
+}
+
+.wia h2{
+    color: #54BAB9;
+}
+
+.educ{
+    background-color: #F7ECDE;
+    color: black;
+    height: 300px;
+    width: 280px;
+    border-radius: 50px solid rgb(0, 0, 0);
+    text-align: left;
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-indent: 10px;
+    line-height: 20px;
+    border-radius: 20px;
+}
+
+.educ h2{
+    color: #54BAB9;
+}
+
+.enter{
+    background-color: #ffffff;
+    color: #31a8a600;
+    height: 15px;
+    width: 852px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 24px;
+    margin-right: 24px;
+    animation-name: colores;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.enterdos{
+    background-color: #ffffff;
+    color: #31a8a600;
+    height: 15px;
+    width: 852px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 24px;
+    margin-right: 24px;
+    animation-name: colores;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.skills{
+    background-color: #FBF8F1;
+    color: black;
+    height: 300px;
+    width: 280px;
+    border-radius: 50px solid rgb(0, 0, 0);
+    text-align: left;
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+    text-indent: 10px;
+    line-height: 20px;
+    border-radius: 20px;
+}
+
+.skills h2{
+    color: #54BAB9;
+}
+
+.himp{
+    background-color: #F7ECDE;
+    color: black;
+    height: 300px;
+    width: 280px;
+    border-radius: 50px solid rgb(0, 0, 0);
+    text-align: left;
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+    text-indent: 10px;
+    line-height: 20px;
+    border-radius: 20px;
+}
+
+.himp h2{
+    color: #54BAB9;
+}
+
+.lp{
+    background-color: #FBF8F1;
+    color: black;
+    height: 300px;
+    width: 280px;
+    border-radius: 50px solid rgb(0, 0, 0);
+    text-align: left;
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-indent: 10px;
+    line-height: 20px;
+    border-radius: 20px;
+}
+
+.lp h2{
+    color: #54BAB9;
+}
+
+.lang{
+    background-color: #F7ECDE;
+    color: black;
+    height: 116px;
+    width: 400px;
+    border-radius: 50px solid rgb(0, 0, 0);
+    text-align: left;
+    float: left;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    text-indent: 10px;
+    line-height: 15px;
+    border-radius: 20px;
+}
+
+.lang h2{
+    color: #54BAB9;
+}
+
+.int{
+    background-color: #F7ECDE;
+    color: black;
+    height: auto;
+    width: 400px;
+    border-radius: 50px solid rgb(0, 0, 0);
+    text-align: left;
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    text-indent: 10px;
+    line-height: 15px;
+    border-radius: 20px;
+}
+
+.int h2{
+    color: #54BAB9;
+}
