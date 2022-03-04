@@ -1,0 +1,369 @@
+@keyframes colores{
+    from{
+        background-color: rgb(194, 0, 0);
+    }
+    to{
+        background-color: #9e0000;
+    }
+    to{
+        background-color: rgb(107, 0, 0);
+    }
+}
+
+@keyframes coloresdos{
+    from{
+        background-color: rgba(194, 0, 0, 0.664);
+    }
+    to{
+        background-color: #9e0000ad;
+    }
+    to{
+        background-color: rgba(107, 0, 0, 0.685);
+    }
+}
+
+body{
+    background-size: cover;
+}
+
+img{
+    width: 375px;
+    height: 150px;
+    margin-left: 20px;
+}
+
+
+header{
+    background-color: rgb(255, 255, 255);
+}
+
+li{
+    float: left;
+    list-style: none;
+    padding: 10px;
+    margin-top: 30px;
+    margin-right: 55px;
+}
+
+li:hover a{
+    color: rgb(19, 11, 136);
+}
+
+li.enc_:hover a{
+    color: rgb(107, 188, 212);
+}
+
+.enc{
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: rgb(223, 29, 29);
+    display: block;
+    float: left;
+}
+
+.enc_{
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: rgb(223, 29, 29);
+    display: block; 
+}
+
+nav{
+    float: right;
+}
+
+nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+nav li:hover > ul{
+    display: block;
+}
+
+.prin{
+    background-color: #ffffff;
+    color: #31a8a600;
+    height: 100px;
+    width: 1350px;
+    float: left;
+    margin-bottom: 10px;
+    animation-name: colores;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.prin1{
+    background-image: url(../imagenes/FondoC.png);
+    height: 600px;
+    width: 1334px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.conocenos1{
+    background-color: rgba(207, 107, 107, 0.493);
+    text-align-last: center;
+    margin-top: 50px;
+    margin-left: 170px;
+    border-radius: 20px;
+    width: 1000px;
+    height: 390px;
+    border: 12px;
+    float: left;
+}
+
+p{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.prin2{
+    height: 830px;
+    width: 600px;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 37px;
+    margin-right: 30px;
+    animation-name: coloresdos;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.prin2_1{
+    height: 830px;
+    width: 600px;
+    float: left;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    animation-name: coloresdos;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.artists{
+    color: rgb(250, 210, 210);
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.artists_ins{
+    color: rgb(250, 210, 210);
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+table{
+    border-color: rgba(250, 210, 210, 0.267);
+}
+
+table img{
+    width: 170px;
+    height: 170px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+table p{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+table tr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+table a{
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    color: rgb(250, 210, 210);
+}
+
+.tit{
+    color: rgb(250, 210, 210);
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 5px;
+    margin-bottom: 5px;   
+    text-align: center;
+}
+
+.prin3{
+    height: 1010px;
+    width: 250px;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
+    animation-name: coloresdos;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.titesp{
+    font-size: 20px;
+    color:aliceblue;
+    margin-left: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.prin3 img{
+    width: 229px;
+    height: 105px;
+    margin-left: 10px;
+}
+
+.kn{
+    font-size: 20px;
+    color:rgb(196, 241, 255);
+    margin-left: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 5px;
+}
+
+.kns{
+    font-size: 17px;
+    color:rgb(196, 241, 255);
+    margin-left: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 200px;
+    text-align: left;
+}
+
+.kns a{
+    text-decoration: none;
+    color: rgb(188, 225, 255);
+}
+
+.kns:hover a{
+    color: rgb(176, 97, 221);
+}
+
+.knt{
+    font-size: 19px;
+    color:rgb(196, 217, 255);
+    margin-left: 30px;
+    font-family: cursive;
+    width: 200px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.bAqui{
+    margin-top: 47px;
+}
+
+.bRels{
+    margin-top: 27px;
+}
+
+.bMorat, .bEm, .bStr{
+    margin-top: 48px;
+}
+
+.bLit{
+    margin-top: 28px;
+}
+
+.bHalf, .bTwo, .bMac{
+    margin-top: 48px;
+}
+
+.bAc{
+    margin-top: -20px;
+}
+
+.top{
+    font-family: monospace;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-left: 185px;
+    margin-bottom: -5px;
+}
+
+.logos{
+    width: 110px;
+    height: 110px;
+}
+
+.tituloT{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+}
+
+.imagenT{
+    width: 100px;
+    height: 100px;
+}
+
+.numeroT{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+}
+
+.prin2_2{
+    height: 1330px;
+    width: 750px;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 37px;
+    margin-right: 30px;
+    animation-name: coloresdos;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.prin2_3{
+    height: 1330px;
+    width: 445px;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 37px;
+    margin-right: 30px;
+    animation-name: coloresdos;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.videoYt{
+    margin-left: 7px;
+    margin-top: 100px;
+}
