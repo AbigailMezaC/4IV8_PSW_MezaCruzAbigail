@@ -59,4 +59,3 @@ function borrar(){
     document.formulario2.venta2.value = "";
     document.formulario2.venta3.value = "";
 }
-

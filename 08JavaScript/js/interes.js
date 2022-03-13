@@ -2,16 +2,16 @@
 
 function validarn(e){
     var teclado = (document.all)?e.KeyCode : e.which
-    /* el ? es un operador que se ocupa para sustituir If
-    Vamos a aplicar una prueba a a todo el teclado a partir d eun patrón.
-    Este patrón debe ser numérico y solo hacepta del 0-9 y los puntos. 
-    Todo los demás los deja escapar. */
+    /*El ? es un operador que se ocupa para sustituir If
+    Vamos a aplicar una prueba a todo el teclado a partir de un patrón.
+    Este patrón debe ser numérico y solo acepta del 0-9 y los puntos. 
+    Todo los demás los deja escapar.*/
 
     if(teclado==8) return true;
     var patron = /[0-9\d .]/;
-    /* El código 8 significa que va a validar todo el tecladu numérico y alfanumérico.
+    /*El código 8 significa que va a validar todo el teclado numérico y alfanumérico.
     La d significa que son dígitos y el punto significa que acepta puntos.
-    Estudiar expersiones regulares. */
+    Estudiar expersiones regulares.*/
 
     var probar = String.fromCharCode(teclado);
 
