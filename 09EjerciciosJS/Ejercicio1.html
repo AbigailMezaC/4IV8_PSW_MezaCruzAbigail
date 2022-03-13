@@ -5,30 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios de JS_1</title>
+    <!-- Cantidad $
+        Más 2% mensual
+    -->
 </head>
 <body>
+    <script src="js/Ejercicio1.js"></script>
     <form method="post" name="formulario1">
-        <label> De
-        </label>
+        <div> Un individuo desea invertir su capital en un banco y 
+            desea saber cuanto dinero ganará después de un mes si el banco paga 
+            a razón de 2% mensual.
+        </div>
         <table>
             <tr>
-                <td>Introduce la cantidad a invertir: </td>
-                <td><input type="text" name="cantidad" onkeypress="return validarn(event)"></td>
+                <td>Introduzca a cantidad que desea invertir: </td>
+                <td><input type="text" name="cantidad" onkeypress="return validar(event)"></td>
             </tr>
             <tr>
                 <td></td>
-                <td><input type="button" value="Interes" onclick="interes()"></td>
+                <td><input type="button" value="Introducir" onclick="ganancia()"></td>
             </tr>
             <tr>
-                <td>Su saldo total con el interes de 2.5% es: </td>
-                <td><input type="text" name="sueldoI" id="cantidadI" readonly="readonly" class="input_text"></td>
+                <td>Su saldo total más el 2% mensual es de: </td>
+                <td><input type="text" name="intMen" readonly="readonly"></td>
             </tr>
             <tr>
                 <td></td>
-                <td><input type="button" name="borrar" value="Borrar Datos" onclick="borrarD()"></td>
+                <td><input type="button" value="Borrar Datos" onclick="borrar()"></td>
             </tr>
         </table>
     </form>
-    <script src="js/interes.js"></script>
 </body>
 </html>
