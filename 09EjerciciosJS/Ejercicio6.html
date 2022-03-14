@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de JS_6</title>
+    <!-- Año que nació
+        Año actual
+        Edad
+    -->
+</head>
+<body>
+    <script src="js/Ejercicio6.js"></script>
+    <form method="post" name="formulario6">
+        <div> Realizar un algoritmo que calcule la edad de una persona.
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td>Año de nacimiento:</td>
+                    <td><input type="text" name="aNacimiento" onkeypress="return validar(event)"></td>
+                </tr>
+                <tr>
+                    <td>Mes de nacimiento (Del 1-12):</td>
+                    <td><input type="text" name="mNacimiento" onkeypress="return validar(event)"></td>
+                </tr>
+                <tr>
+                    <td>Día de nacimiento (Del 1-31):</td>
+                    <td><input type="text" name="dNacimiento" onkeypress="return validar(event)"></td>
+                </tr>
+                <tr>
+                    <td>Año actual:</td>
+                    <td><input type="text" name="aActual" onkeypress="return validar(event)"></td>
+                </tr>
+                <tr>
+                    <td>Mes actual (Del 1-12):</td>
+                    <td><input type="text" name="mActual" onkeypress="return validar(event)"></td>
+                </tr>
+                <tr>
+                    <td>Día actual (Del 1-31):</td>
+                    <td><input type="text" name="dActual" onkeypress="return validar(event)"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Calcular Edad" onclick="calcEdad()"></td>
+                </tr>
+                <tr>
+                    <td>En estos momentos tienes:</td>
+                    <td><input type="text" name="edad" readonly="readonly"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Borrar Datos" onclick="borrar()"></td>
+                </tr>
+            </table>
+        </div>  
+    </form>
+</body>
+</html>
