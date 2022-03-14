@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de JS_5</title>
+    <!-- Total de estudiantes
+        Total de mujeres
+        Total de hombres
+    -->
+</head>
+<body>
+    <script src="js/Ejercicio5.js"></script>
+    <form method="post" name="formulario5">
+        <div> Un maestro desea saber que porcentaje de hombres y que 
+            porcentaje de mujeres hay en un grupo de estudiantes.
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td>Total de alumnos en el grupo:</td>
+                    <td><input type="text" name="cantidadT" onkeypress="return validar(event)"></td>
+                </tr>
+                <tr>
+                    <td>Total de mujeres en el grupo:</td>
+                    <td><input type="text" name="cantidadM" onkeypress="return validar(event)"></td>
+                </tr>
+                <tr>
+                    <td>Total de hombres en el grupo:</td>
+                    <td><input type="text" name="cantidadH" onkeypress="return validar(event)"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Calcular" onclick="porcentajes()"></td>
+                </tr>
+                <tr>
+                    <td>Usted tiene un porcentaje de:</td>
+                    <td><input type="text" name="totalM" readonly="readonly"></td>
+                </tr>
+                <tr>
+                    <td>Usted tiene un porcentaje de:</td>
+                    <td><input type="text" name="totalH" readonly="readonly"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Borrar Datos" onclick="borrar()"></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
