@@ -9,44 +9,18 @@ function validarn(e){
     return patron.test(probar);
 }
 
-function ventas(){
-    var vUno = document.formulario2.venta1.value;
-    var vDos = document.formulario2.venta2.value;
-    var vTres = document.formulario2.venta3.value;
-
-    var vaU = parseInt(vUno);
-    var vaD = parseInt(vDos);
-    var vaT = parseInt(vTres);
-
-    var vTotal = vaU + vaD + vaT;
-
-    var comision = vTotal*0.10;
-
-    var total = comision + vTotal;
-
-    document.formulario2.ventasC.value = "$" + total;
-}
-
 function ventaTotal(){
-    var sueldoU = document.formulario2.sueldo.value;
+    var sueldoF = document.formulario2.sueldo.value;
 
-    var sueldoF = parseInt(sueldoU);
+    var sueldoFijo = parseInt(sueldoF);
 
-    var vUno = document.formulario2.venta1.value;
-    var vDos = document.formulario2.venta2.value;
-    var vTres = document.formulario2.venta3.value;
+    var comis = sueldoFijo*0.10;
 
-    var vaU = parseInt(vUno);
-    var vaD = parseInt(vDos);
-    var vaT = parseInt(vTres);
+    var tComis = comis*3;
 
-    var vTotal = vaU + vaD + vaT;
+    document.formulario2.ventasC.value = "$" + tComis;
 
-    var comision = vTotal*0.10;
-
-    var total = comision + vTotal;
-
-    var ventaTot = sueldoF + total;
+    var ventaTot = sueldoFijo + tComis;
 
     document.formulario2.totalFinal.value = "$" + ventaTot;
 }
