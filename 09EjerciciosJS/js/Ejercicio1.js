@@ -12,7 +12,7 @@ function validar(e){
 function ganancia(){
     var dinero = document.formulario1.cantidad.value;
     
-    var resultado = parseInt(dinero);
+    var resultado = parseFloat(dinero);
 
     var porcentaje = resultado*0.02;
 
