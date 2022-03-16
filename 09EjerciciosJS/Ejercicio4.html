@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios de JS_4</title>
+    <link rel="stylesheet" href="../09EjerciciosJS/css/style4.css">
     <!-- Pacial 1
         Parcial 2
         Parcial 3
@@ -19,65 +20,71 @@
 <body>
     <script src="js/Ejercicio4.js"></script>
     <form method="post" name="formulario4">
-        <div> Un alumno desea saber cuál será su calificación final en la materia de Algoritmos. 
+        <div class="titulo">
+            <h1>~ Problema 4 ~</h1>
+        </div>
+        <div class="problema"> <br> Un alumno desea saber cuál será su calificación final en la materia de Algoritmos. 
             Dicha calificación se compone de los siguientes porcentajes:
             55% del promedio de sus tres calificaciones parciales 
             30% de la calificación del examen final
             15% de la calificación de un trabajo final
         </div>
-        <div>
-            <table>
-                <tr>
-                    <td>Calificación del 1er parcial:</td>
-                    <td><input type="text" name="parU" onkeypress="return validar(event)"></td>
-                </tr>
-                <tr>
-                    <td>Calificación del 2do parcial:</td>
-                    <td><input type="text" name="parD" onkeypress="return validar(event)"></td>
-                </tr>
-                <tr>
-                    <td>Calificación del 3er parcial:</td>
-                    <td><input type="text" name="parT" onkeypress="return validar(event)"></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="button" value="Calcular Promedio" onclick="promedioC()"></td>
-                </tr>
-                <tr>
-                    <td>Tu promedio es de:</td>
-                    <td><input type="text" name="promC" readonly="readonly"></td>
-                </tr>
-            </table>
+        <br>
+        <div class="tablas">
+            <div>
+                <table class="uno">
+                    <tr>
+                        <td>Calificación del 1er parcial:</td>
+                        <td><input type="text" name="parU" onkeypress="return validar(event)"></td>
+                    </tr>
+                    <tr>
+                        <td>Calificación del 2do parcial:</td>
+                        <td><input type="text" name="parD" onkeypress="return validar(event)"></td>
+                    </tr>
+                    <tr>
+                        <td>Calificación del 3er parcial:</td>
+                        <td><input type="text" name="parT" onkeypress="return validar(event)"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="Calcular Promedio" onclick="promedioC()"></td>
+                    </tr>
+                    <tr>
+                        <td>Tu promedio es de:</td>
+                        <td><input type="text" name="promC" readonly="readonly"></td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table class="dos">
+                    <tr>
+                        <td colspan="2">Ahora ingresa los siguientes datos:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Calificación del examen final:</td>
+                        <td><input type="text" name="calF" onkeypress="return validar(event)"></td>
+                    </tr>
+                    <tr>
+                        <td>Calificación del trabajo final:</td>
+                        <td><input type="text" name="traF" onkeypress="return validar(event)"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="Calcular" onclick="califf()"></td>
+                    </tr>
+                    <tr>
+                        <td>Tu calificación final es de:</td>
+                        <td><input type="text" name="calificacionFinal" readonly="readonly"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="Borrar Datos" onclick="borrar()"></td>
+                    </tr>
+                </table>
+            </div>
         </div>
-
-        <div>
-            <table>
-                <tr>
-                    <td>Ahora ingresa los siguientes datos:</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Calificación del examen final:</td>
-                    <td><input type="text" name="calF" onkeypress="return validar(event)"></td>
-                </tr>
-                <tr>
-                    <td>Calificación del trabajo final:</td>
-                    <td><input type="text" name="traF" onkeypress="return validar(event)"></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="button" value="Calcular" onclick="califf()"></td>
-                </tr>
-                <tr>
-                    <td>Tu calificación final es de:</td>
-                    <td><input type="text" name="calificacionFinal" readonly="readonly"></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="button" value="Borrar Datos" onclick="borrar()"></td>
-                </tr>
-            </table>
-        </div>
+        <p class="linkR"><a href="../index.html">Regresar a Index</a></p>
     </form>
 </body>
 </html>
