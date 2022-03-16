@@ -1,3 +1,5 @@
+document.formulario4.promC.value(Math.floor(2.5));
+
 function validar(e){
     var teclado = (document.all)?e.KeyCode : e.which
 
@@ -14,9 +16,9 @@ function promedioC(){
     var parcialD = document.formulario4.parD.value;
     var parcialT = document.formulario4.parT.value;
     
-    var prU = parseInt(parcialU);
-    var prD = parseInt(parcialD);
-    var prT = parseInt(parcialT);
+    var prU = parseFloat(parcialU);
+    var prD = parseFloat(parcialD);
+    var prT = parseFloat(parcialT);
 
     var suma = prU + prD + prT;
 
@@ -30,9 +32,9 @@ function califf(){
     var parcialD = document.formulario4.parD.value;
     var parcialT = document.formulario4.parT.value;
     
-    var prU = parseInt(parcialU);
-    var prD = parseInt(parcialD);
-    var prT = parseInt(parcialT);
+    var prU = parseFloat(parcialU);
+    var prD = parseFloat(parcialD);
+    var prT = parseFloat(parcialT);
 
     var suma = prU + prD + prT;
 
@@ -41,8 +43,8 @@ function califf(){
     var caliF = document.formulario4.calF.value;
     var trabF = document.formulario4.traF.value;
     
-    var clF = parseInt(caliF);
-    var trF = parseInt(trabF);
+    var clF = parseFloat(caliF);
+    var trF = parseFloat(trabF);
 
     var porcentajeC = clF*0.30;
 
