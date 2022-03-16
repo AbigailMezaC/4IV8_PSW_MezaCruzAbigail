@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios de JS_6</title>
+    <link rel="stylesheet" href="../09EjerciciosJS/css/style6.css">
     <!-- Año que nació
         Año actual
         Edad
@@ -13,8 +14,12 @@
 <body>
     <script src="js/Ejercicio6.js"></script>
     <form method="post" name="formulario6">
-        <div> Realizar un algoritmo que calcule la edad de una persona.
+        <div class="titulo">
+            <h1>~ Problema 6 ~</h1>
         </div>
+        <div class="problema"> <br> Realizar un algoritmo que calcule la edad de una persona.
+        </div>
+        <br>
         <div>
             <table>
                 <tr>
@@ -23,11 +28,19 @@
                 </tr>
                 <tr>
                     <td>Mes de nacimiento (Del 1-12):</td>
-                    <td><input type="text" name="mNacimiento" onkeypress="return validar(event)"></td>
+                    <td><input type="text" name="mNacimiento" onkeypress="return validar(event)" onkeypress="validarF()"></td>
                 </tr>
                 <tr>
                     <td>Día de nacimiento (Del 1-31):</td>
                     <td><input type="text" name="dNacimiento" onkeypress="return validar(event)"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>Año actual:</td>
@@ -54,7 +67,8 @@
                     <td><input type="button" value="Borrar Datos" onclick="borrar()"></td>
                 </tr>
             </table>
-        </div>  
+        </div>
+        <p class="linkR"><a href="../index.html">Regresar a Index</a></p>  
     </form>
 </body>
 </html>
