@@ -40,6 +40,16 @@ function calcEdad(){
 
 }
 
+function validarF(){
+    
+    if(mNac<1 || mAct>12){
+        alert('Ingresar valor entre 1 y 12');
+        elemento.focus();
+        return false;
+    }
+    return true;
+}
+
 function borrar(){
     document.formulario6.aNacimiento.value = "";
     document.formulario6.mNacimiento.value = "";
