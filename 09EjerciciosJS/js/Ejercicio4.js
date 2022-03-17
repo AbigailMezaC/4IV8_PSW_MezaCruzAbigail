@@ -1,5 +1,3 @@
-document.formulario4.promC.value(Math.floor(2.5));
-
 function validar(e){
     var teclado = (document.all)?e.KeyCode : e.which
 
