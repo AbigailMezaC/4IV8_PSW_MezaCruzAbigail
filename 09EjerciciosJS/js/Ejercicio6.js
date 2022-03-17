@@ -27,27 +27,29 @@ function calcEdad(){
     var mayor = aAct - aNac;
     var menor = mayor - 1;
 
-    if (mNac < mAct)
-        document.formulario6.edad.value = mayor + " años";
-    else if (mNac > mAct)
-        document.formulario6.edad.value = menor + " años";
-    else if (dNac < dAct)
-        document.formulario6.edad.value = mayor + " años";
-    else if (dNac > dAct)
-        document.formulario6.edad.value = menor + " años";
-    else
-        alert("Introduciste un dato incorrecto");
-
-}
-
-function validarF(){
-    
-    if(mNac<1 || mAct>12){
-        alert('Ingresar valor entre 1 y 12');
-        elemento.focus();
-        return false;
+    if(aNac < aAct){
+        alert("Añadiste datos incorrectos")
     }
-    return true;
+
+    if(mNac > 12 || mAct > 12){
+        alert("¡Solo hay 12 meses!");
+    }
+    
+    if(dNac > 31 || dAct > 31){
+        alert("!El mes tiene máximo 31 días¡")
+    }
+
+    if (mNac < mAct){ 
+        document.formulario6.edad.value = mayor + " años";
+    }else if (mNac > mAct){
+        document.formulario6.edad.value = menor + " años";
+    }else if (dNac < dAct){
+        document.formulario6.edad.value = mayor + " años";
+    }else if (dNac > dAct){
+        document.formulario6.edad.value = menor + " años";
+    }else{
+        alert("Introduciste un dato incorrecto o te faltó algún dato por agregar");
+    } 
 }
 
 function borrar(){
