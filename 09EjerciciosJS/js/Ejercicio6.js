@@ -27,7 +27,7 @@ function calcEdad(){
     var mayor = aAct - aNac;
     var menor = mayor - 1;
 
-    if(aNac < aAct){
+    if(aNac > aAct){
         alert("Añadiste datos incorrectos")
     }
 
