@@ -25,6 +25,10 @@ h2, h3{
     flex-flow: column;
 }
 
+::placeholder{
+    color: rgba(177, 203, 226, 0.39);
+}
+
 .problema-container{
     background-color: rgb(127, 89, 199);
     padding: 1rem;
