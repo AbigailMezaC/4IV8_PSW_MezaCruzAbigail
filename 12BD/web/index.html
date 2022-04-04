@@ -5,17 +5,72 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 -->
 <html>
     <head>
-        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link rel="stylesheet" href="css/style.css">
 
-        <title>TODO supply a title</title>
+        <title>Alumnos Batiz</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body background="css/images/fondo.jpg">
         <div class="container">
-            <h1>Consulta de Alumnos de Batiz</h1>
-            <br>
+            <h2>Consulta de Alumnos de Batiz</h2> 
             <a href="ConsultarAlumnos">Consultar Lista</a>
+        </div>
+        <div class="registro">
+            <form name="formulario" method="post" action="RegistrarAlumnos">
+                <label>Nombre:</label>
+                <input type="text" name="nombre" id="nombre">
+                <br>
+                <label>Apellido Paterno:</label>
+                <input type="text" name="appat" id="appat">
+                <br>
+                <label>Apellido Materno:</label>
+                <input type="text" name="apmat" id="apmat">
+                <br>
+                <label>Boleta:</label>
+                <input type="text" name="boleta" id="boleta">
+                <br>
+                <label>Teléfono:</label>
+                <input type="text" name="telefono" id="telefono">
+                <br>
+                <input type="submit" value="Registrar Nuevo Alumno">
+                <br>
+                <input type="reset" value="Borrar Datos">
+            </form>
+        </div>
+        <div class="eliminar">
+            <form method="post" action="EliminarAlumno" name="elimina">
+                <label>Ingrese la Boleta para dar de baja a un alumno</label>
+                <br>
+                <input type="text" name="eliminarBoleta">
+                <br>
+                <input type="submit" value="Dar de Baja">
+            </form>
+        </div>
+        <div class="actualizar">
+            <form method="post" action="ActualizarAlumno" name="actualiza">
+                <h2>Actualización de un Alumno</h2>
+                <label>Ingrese el número de boleta del alumno<br>al que quiere actualizar sus datos:</label>
+                <input type="text" name="boletaPA" id="boletaPA">
+                <br>
+                <br>
+                <label>Nombre actualizado:</label>
+                <input type="text" name="nombreA" id="nombreA">
+                <br>
+                <label>Apellido Paterno Actualizado:</label>
+                <input type="text" name="appatA" id="appatA">
+                <br>
+                <label>Apellido Materno Actualizado:</label>
+                <input type="text" name="apmatA" id="apmatA">
+                <br>
+                <label>Boleta Actualizada:</label>
+                <input type="text" name="boletaA" id="boletaA">
+                <br>
+                <label>Teléfono Actualizado:</label>
+                <input type="text" name="telefonoA" id="telefonoA">
+                <br>
+                <input type="submit" value="Actualizar Datos">
+            </form>
         </div>
     </body>
 </html>

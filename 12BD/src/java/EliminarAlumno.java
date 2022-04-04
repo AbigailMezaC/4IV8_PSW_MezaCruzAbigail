@@ -5,33 +5,32 @@
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.*;
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import java.sql.*;
-import javax.servlet.ServletConfig;
-
 /**
  *
  * @author mezac
  */
-public class ConsultarAlumnos extends HttpServlet {
-
-    /**
-     * Para poder establecer una conexión con base de datos es necesario
-     * contar con tres tipos de objetos my específicos los cuales son:
-     * Connection: es el encargado de establecer la conexión con el servidor de BD
-     * Statement: sirve para poder definir y manipular los diferentes objetos de las querrys como por ejemplo: create, delete, insert, update, drop, etc
-     * ResultSet: sirve para poder realizar las consultas a la BD 
-     */
+public class EliminarAlumno extends HttpServlet {
     
     private Connection con;
     private Statement set;
     private ResultSet rs;
-    
-    //Definir el constructor
+
+    /**
+     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
+     * methods.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
     
     public void init(ServletConfig scg) throws ServletException{
         //Establecer la conexión con la BD
@@ -49,6 +48,7 @@ public class ConsultarAlumnos extends HttpServlet {
             set = con.createStatement();
             
             System.out.println("Si conectó a la BD :3 *w* ");
+            
         }catch(Exception e){
             System.out.println("No conectó, solo juguito contigo unu");
             System.out.println(e.getMessage());
@@ -79,52 +79,31 @@ public class ConsultarAlumnos extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Tabla de Alumnos de Batiz</title>");            
+            out.println("<title>Eliminar Alumno</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Lista de Alumnos de Batiz</h1>"
-            +"<br>"
-            +"<table border='2' >"
-                    +"<tr>"
-                        +"<th>Boleta</th>"
-                        +"<th>Nombre del Alumno</th>"
-                        +"<th>Teléfono</th>"
-                    +"</tr>");
+            
             try{
-                int bol;
-                String nom, apellidopaterno, apellidomaterno, tel;
+                //Para eliminar en la BD es:
+                //delete from alumnosbatiz where boleta=?
                 
-                //Que tipo de querry voy a realizar
-                String q = "select * from alumnosbatiz";
+                int boleta = Integer.parseInt(request.getParameter("eliminarBoleta"));
                 
-                set = con.createStatement();
-                rs = set.executeQuery(q);
+                String q = "delete from alumnosbatiz where boleta ="+boleta;
                 
-                while(rs.next()){
-                    bol = rs.getInt("boleta");
-                    nom = rs.getString("nombre");
-                    apellidopaterno = rs.getString("appat");
-                    apellidomaterno = rs.getString("apmat");
-                    tel = rs.getString("telefono");
-                    
-                    out.println("<tr>"
-                            + "<td>"+bol+"</td>"
-                            + "<td>"+nom+" "+apellidopaterno+" "+apellidomaterno+"</td>"
-                            + "<td>"+tel+"</td>"
-                            + "</tr>");
-                }
-                
-                rs.close();
-                set.close();
+                set.executeUpdate(q);
+                out.println("<h1>Alumno dado de baja</h1>");
+                System.out.println("Dato Eliminado");
                 
             }catch(Exception e){
-                System.out.println("Error al conectar la tabla T_T");
+                
+                out.println("<h1>Error, verifica el dato de búsqueda</h1>");
                 System.out.println(e.getMessage());
                 System.out.println(e.getStackTrace());
+                System.out.println("No se pudo Eliminar");
+                
             }
-            out.println("</table>"
-                    +"<br>"
-                    +"<a href='index.html'>Regresar a Principal</a>");
+            out.println("<a href='ConsultarAlumnos'>Consultar Alumnos</a>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -141,7 +120,7 @@ public class ConsultarAlumnos extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+        processRequest(request, response);
     }
 
     /**
@@ -153,13 +132,5 @@ public class ConsultarAlumnos extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-    
-    public void destroy(){
-        try{
-            con.close();
-        }catch(Exception e){
-            super.destroy();
-        }
-    }
 
 }
