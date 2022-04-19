@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Examen PSW</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="divIng">
+            <form method="post" action="ingresar.jsp" name="formIngresar" enctype="multipart/form-data">
+                <h3>Nueva Sesión</h3>
+                <label>Turno:</label>
+                <input type="text" name="turno">
+                <br>
+                <label>Grupo:</label>
+                <input type="text" name="grupo">
+                <br>
+                <label>Boleta:</label>
+                <input type="text" name="bol">
+                <br>
+                <label>Imagen del Alumno:</label>
+                <input type="file" name="img">
+                <br>
+                <input type="submit" value="Ingresar">
+                <input type="reset" value="Borrar Registro">
+            </form>
+        </div>
+        <div class="divIni">
+            <form method="post" action="" name="formIniciar">
+                <h3>Inicia Sesión</h3>
+                <label>Boleta:</label>
+                <input type="text" name="bolCon">
+                <br>
+                <input type="submit" value="Consultar">
+                <input type="reset" value="Borrar">
+            </form>
+        </div>
+        <div class="divEli">
+            <form method="post" action="eliminar.jsp" name="formEliminar">
+                <h3>Eliminar Sesión</h3>
+                <label>Boleta:</label>
+                <input type="text" name="bolEl">
+                <br>
+                <input type="submit" value="Eliminar">
+                <input type="reset" value="Borrar">
+            </form>
+        </div>
+    </body>
+</html>

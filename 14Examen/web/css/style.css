@@ -9,78 +9,66 @@ body{
     padding: 0;
     background-size: cover;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    align-content: center;
+    background-image: url(../css/images/Fondo.gif);
 }
 
-a{
-    margin-top: 5px;
-}
-
-.container {
-    background-color: rgba(166, 240, 191, 0.514);
-    color: rgb(0, 0, 0);
-    border-radius: 10px;
-    float: left;
-    font-size: 20px;
+.divIngresar, .divEliminar, .divIniciar, .divCons{
     margin-top: 15px;
-    align-items: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.registro {
-    background-color: rgba(166, 240, 191, 0.514);
-    color: rgb(0, 0, 0);
-    border-radius: 10px;
-    float: left;
-    margin-top: 5px;
-    align-items: center;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.eliminar{
-    background-color: rgba(166, 240, 191, 0.514);
-    color: rgb(0, 0, 0);
-    border-radius: 10px;
-    margin-top: 5px;
-    float: left;
-    align-items: center;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.actualizar{
-    background-color: rgba(166, 240, 191, 0.514);
-    color: rgb(0, 0, 0);
-    border-radius: 10px;
-    float: right;
-    font-size: 20px;
-    align-items: center;
-    margin-top: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-h2{
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-label{
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: rgba(216, 81, 187, 0.493);
 }
 
 input{
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
+.divIng{
+    background-color: rgba(216, 81, 187, 0.493);
+    text-align-last: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 500px;
+    border-radius: 20px;
+    width: 400px;
+    height: 200px;
+    border: 12px;
+    float: left;
+}
+
+.divIni, .divEli{
+    background-color: rgba(216, 81, 187, 0.493);
+    text-align-last: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 500px;
+    border-radius: 20px;
+    width: 400px;
+    height: 100px;
+    border: 12px;
+    float: left;
+}
+
+div h3{
+    font-size: 25px;
+    color: beige;
+}
+
+label{
+    font-size: 18px;
+    color: rgb(245, 216, 229);
+}
+
+input{
+    border-radius: 20px;
+    border: 12px;
+    border-color: rgb(204, 56, 123);
+    border-spacing: 10px;;
+}
+
+a{
+    font-size: 25px;
+    color: beige;
+}
 
