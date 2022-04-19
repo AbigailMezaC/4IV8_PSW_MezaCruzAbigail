@@ -29,7 +29,7 @@ input{
     text-align-last: center;
     margin-top: 25px;
     margin-bottom: 25px;
-    margin-left: 500px;
+    margin-left: 480px;
     border-radius: 20px;
     width: 400px;
     height: 200px;
@@ -42,7 +42,7 @@ input{
     text-align-last: center;
     margin-top: 25px;
     margin-bottom: 25px;
-    margin-left: 500px;
+    margin-left: 480px;
     border-radius: 20px;
     width: 400px;
     height: 100px;
@@ -70,5 +70,6 @@ input{
 a{
     font-size: 25px;
     color: beige;
+    text-align: center;
 }
 
