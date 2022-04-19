@@ -33,7 +33,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                 <label>Teléfono:</label>
                 <input type="text" name="telefono" id="telefono">
                 <br>
-                <input type="submit" value="Registrar Nuevo Alumno">
+                <input type="submit" value="Registrar Nuevo Alumno" onclick="registro()">
                 <br>
                 <input type="reset" value="Borrar Datos">
             </form>
@@ -42,7 +42,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             <form method="post" action="EliminarAlumno" name="elimina">
                 <label>Ingrese la Boleta para dar de baja a un alumno</label>
                 <br>
-                <input type="text" name="eliminarBoleta">
+                <input type="text" name="eliminarBoleta" id="eliminarBoleta">
                 <br>
                 <input type="submit" value="Dar de Baja">
             </form>

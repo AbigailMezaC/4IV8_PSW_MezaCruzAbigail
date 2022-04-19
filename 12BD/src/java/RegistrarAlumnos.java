@@ -38,7 +38,7 @@ public class RegistrarAlumnos extends HttpServlet {
         String url = "jdbc:mysql:3306//localhost/alumnos";
         
         String username = "root";
-        String password = "ab1gail";
+        String password = "n0m3l0";
         
         try{
             //Intentar conectar a la BD
@@ -114,7 +114,7 @@ public class RegistrarAlumnos extends HttpServlet {
                 System.out.println(boleta);
                
                 //Se debe preparar la sentencia
-                String q = "insert into alumnosbatiz " 
+                String q = "insert into alumnobatiz " 
                         + "values ("+boleta+", '"+nom+"', '"+appat+"', '"+apmat+"', '"+tel+"')";
                 
                 //Se debe ejecutar la sentencia

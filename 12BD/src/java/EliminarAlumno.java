@@ -38,7 +38,7 @@ public class EliminarAlumno extends HttpServlet {
         String url = "jdbc:mysql:3306//localhost/alumnos";
         
         String username = "root";
-        String password = "ab1gail";
+        String password = "n0m3l0";
         
         try{
             //Intentar conectar a la BD
@@ -85,11 +85,11 @@ public class EliminarAlumno extends HttpServlet {
             
             try{
                 //Para eliminar en la BD es:
-                //delete from alumnosbatiz where boleta=?
+                //delete from alumnobatiz where boleta=?
                 
-                int boleta = Integer.parseInt(request.getParameter("eliminarBoleta"));
+                int eliminarBoleta = Integer.parseInt(request.getParameter("eliminarBoleta"));
                 
-                String q = "delete from alumnosbatiz where boleta ="+boleta;
+                String q = "delete from alumnobatiz where boleta = "+eliminarBoleta;
                 
                 set.executeUpdate(q);
                 out.println("<h1>Alumno dado de baja</h1>");

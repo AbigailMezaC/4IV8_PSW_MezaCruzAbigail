@@ -38,7 +38,7 @@ public class ActualizarAlumno extends HttpServlet {
         String url = "jdbc:mysql:3306//localhost/alumnos";
         
         String username = "root";
-        String password = "ab1gail";
+        String password = "n0m3l0";
         
         try{
             //Intentar conectar a la BD
@@ -109,11 +109,11 @@ public class ActualizarAlumno extends HttpServlet {
                 boletaAN = request.getParameter("boletaPA");
                 
                 //Se debe preparar la sentencia
-                String a = "update alumnosbatiz set nombre ='"+nom+"' where boleta ='"+boletaAN+"'";
-                String b = "update alumnosbatiz set appat ='"+appat+"' where boleta ='"+boletaAN+"'";
-                String c = "update alumnosbatiz set apmat ='"+apmat+"' where boleta ='"+boletaAN+"'";
-                String d = "update alumnosbatiz set telefono ='"+tel+"' where boleta ='"+boletaAN+"'";
-                String e = "update alumnosbatiz set boleta ='"+boleta+"' where boleta ='"+boletaAN+"'";
+                String a = "update alumnobatiz set nombre ='"+nom+"' where boleta ='"+boletaAN+"'";
+                String b = "update alumnobatiz set appat ='"+appat+"' where boleta ='"+boletaAN+"'";
+                String c = "update alumnobatiz set apmat ='"+apmat+"' where boleta ='"+boletaAN+"'";
+                String d = "update alumnobatiz set telefono ='"+tel+"' where boleta ='"+boletaAN+"'";
+                String e = "update alumnobatiz set boleta ='"+boleta+"' where boleta ='"+boletaAN+"'";
 
                 //Se debe ejecutar la sentencia
                 set.executeUpdate(a);

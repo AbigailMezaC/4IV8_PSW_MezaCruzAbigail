@@ -39,7 +39,7 @@ public class ConsultarAlumnos extends HttpServlet {
         String url = "jdbc:mysql:3306//localhost/alumnos";
         
         String username = "root";
-        String password = "ab1gail";
+        String password = "n0m3l0";
         
         try{
             //Intentar conectar a la BD
@@ -95,7 +95,7 @@ public class ConsultarAlumnos extends HttpServlet {
                 String nom, apellidopaterno, apellidomaterno, tel;
                 
                 //Que tipo de querry voy a realizar
-                String q = "select * from alumnosbatiz";
+                String q = "select * from alumnobatiz";
                 
                 set = con.createStatement();
                 rs = set.executeQuery(q);
